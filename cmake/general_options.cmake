@@ -1,6 +1,10 @@
 # General options
+
+## Complete options
 option(_ENABLE_ALL "Enable every option" OFF)
 option(_ENABLE_FAST "Enable every option" OFF)
+
+## Individual options
 option(_ENABLE_TESTING "Enable testing with Google Test" OFF)
 option(_ENABLE_CONAN "Enable Conan package manager" ON)
 option(_ENABLE_DOXYGEN "Enable Doxygen documentation" OFF)
@@ -10,16 +14,25 @@ option(_ENABLE_CPPCHECK "Enable cppcheck to verify the sources syntax" OFF)
 option(_VOID_PREFIX "The prefix is null" OFF)
 option(_ENABLE_INSTALL_TO_TMP "The prefix is /tmp" OFF)
 
+## User options
+
+
 # Handling options
+
+## Complete
 
 if(_ENABLE_COMPLETE)
 	set(_ENABLE_TESTING ON)
+	set(_ENABLE_CONAN ON)
 	set(_ENABLE_DOXYGEN ON)
 	set(_ENABLE_VERBOSE ON)
 	set(_ENABLE_CCACHE ON)
 	set(_ENABLE_CPPCHECK ON)
 	set(_VOID_PREFIX ON)
+	set(_ENABLE_INSTALL_TO_TMP ON)
 endif()
+
+## Individuals
 
 if(_ENABLE_FAST)
 	set(_ENABLE_TESTING ON)
