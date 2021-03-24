@@ -27,12 +27,14 @@
  #include "Poco/MD5Engine.h"
  #include "Poco/DigestStream.h"
  
+#include "project-nameConfig.h"
 #include "library1.h"
 #include "library2.h"
-#include "project-nameConfig.h"
 
 int main(int argc, char* argv[])
 {
+	std::cout << "\n This project is: " << PROJECT_NAME;
+	
 	Library1 obj1;
 	Library2 obj2;
 	
