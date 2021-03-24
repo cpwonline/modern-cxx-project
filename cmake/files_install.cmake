@@ -8,11 +8,8 @@ install(
 
 ## Header files
 install(
-	FILES ${PROJECT_BINARY_DIR}/${PROJECT_NAME}Config.h 
-	DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
-)
-install(
 	FILES 
+		${PROJECT_BINARY_DIR}/${PROJECT_NAME}Config.h 
 		${HEADER}/library1.h
 		${HEADER}/library2.h
 		${HEADER}/object_library.h
