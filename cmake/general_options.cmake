@@ -21,7 +21,7 @@ option(_ENABLE_INSTALL_TO_TMP "The prefix is /tmp" OFF)
 
 ## Complete
 
-if(_ENABLE_COMPLETE)
+if(_ENABLE_ALL)
 	set(_ENABLE_TESTING ON)
 	set(_ENABLE_CONAN ON)
 	set(_ENABLE_DOXYGEN ON)
@@ -32,14 +32,14 @@ if(_ENABLE_COMPLETE)
 	set(_ENABLE_INSTALL_TO_TMP ON)
 endif()
 
-## Individuals
-
 if(_ENABLE_FAST)
 	set(_ENABLE_TESTING ON)
 	set(_ENABLE_VERBOSE ON)
 	set(_ENABLE_CCACHE ON)
 	set(_VOID_PREFIX ON)
 endif()
+
+## Individuals
 
 if(_ENABLE_VERBOSE)
 	set(CMAKE_VERBOSE_MAKEFILE ON)
@@ -74,3 +74,5 @@ if(_ENABLE_CPPCHECK)
 		message(FATAL_ERROR "CppCheck not found. It can't check sources'")
 	endif()
 endif()
+
+## User
