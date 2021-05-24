@@ -21,11 +21,13 @@
  * 
  */
 
+#ifndef OBJECT_LIBRARY_H
+#define OBJECT_LIBRARY_H
+
+
 #include <iostream>
 #include <string>
 
-#ifndef OBJECT_LIBRARY_H
-#define OBJECT_LIBRARY_H
 
 class ObjectLibrary
 {

@@ -22,16 +22,22 @@
  */
 
 
+#ifndef LIBRARY2_H
+#define LIBRARY2_H
+
+
 #include <string>
 
 #include "object_library.h"
 
-#ifndef LIBRARY2_H
-#define LIBRARY2_H
 
 class Library2
 {
 	public:
+		/**
+		 * @brief ...
+		 *
+		 */
 		Library2();
 		virtual ~Library2();
 		

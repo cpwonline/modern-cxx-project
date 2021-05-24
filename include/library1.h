@@ -22,13 +22,15 @@
  */
 
 
+#ifndef LIBRARY1_H
+#define LIBRARY1_H
+
+
 #include <gtkmm.h>
 
 #include "project-nameConfig.h"
 #include "object_library.h"
 
-#ifndef LIBRARY1_H
-#define LIBRARY1_H
 
 class Library1
 {
