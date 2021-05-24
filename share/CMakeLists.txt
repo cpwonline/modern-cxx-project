@@ -7,7 +7,7 @@ configure_file(
 # .glade file
 configure_file(
 	project.glade 
-	${PROJECT_BINARY_DIR}/share/${PROJECT_NAME}.glade
+	${PROJECT_BINARY_DIR}/share/${PROJECT_NAME}/${PROJECT_NAME}.glade
 )
 
 # .pc file
