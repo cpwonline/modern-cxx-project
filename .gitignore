@@ -4,6 +4,7 @@
 [Dd]ebug/
 [Bb]uild/
 [Rr]elease/
+.cache
 
 # Files
 *.depend
@@ -18,3 +19,4 @@
 *.tags
 *.log
 *.dat
+*.kdev*
