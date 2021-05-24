@@ -3,16 +3,11 @@
 option(${PROJECT_NAME}_TESTING "Enable testing with Google Test" OFF)
 option(${PROJECT_NAME}_CONAN "Enable Conan package manager" OFF)
 option(${PROJECT_NAME}_DOXYGEN "Enable Doxygen documentation" OFF)
-option(${PROJECT_NAME}_VERBOSE "Enable verbose output" OFF)
 option(${PROJECT_NAME}_CCACHE "Enable ccache to speed up the build time" OFF)
 option(${PROJECT_NAME}_CPPCHECK "Enable cppcheck to verify the sources syntax" OFF)
 option(${PROJECT_NAME}_VOID_PREFIX "Void prefix to install the project on CMake binary dir" OFF)
 
 # Handling options
-
-if(${PROJECT_NAME}_VERBOSE)
-	set(CMAKE_VERBOSE_MAKEFILE ON)
-endif()
 
 if(${PROJECT_NAME}_CCACHE)
 	find_program(CCACHE_FOUND ccache)
