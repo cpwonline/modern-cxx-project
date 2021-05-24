@@ -34,7 +34,7 @@ add_subdirectory(src)
 add_subdirectory(share)
 
 # Testing
-if(_ENABLE_TESTING)
+if(${PROJECT_NAME}_TESTING)
 	enable_testing()
 	add_subdirectory(tests)
 endif()
