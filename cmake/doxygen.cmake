@@ -1,4 +1,4 @@
-if(_ENABLE_DOXYGEN)
+if(${PROJECT_NAME}_DOXYGEN)
 	find_package(Doxygen)
 	
 	if(DOXYGEN_FOUND)
@@ -15,6 +15,6 @@ if(_ENABLE_DOXYGEN)
 		)
 		message("Doxygen OK")
 	else()
-		message(FATAL_ERROR "Doxygen not found. It can't generate Doxygen documentation'")
+		message(FATAL_ERROR "Doxygen not found.")
 	endif()
 endif()
