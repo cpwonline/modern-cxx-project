@@ -7,7 +7,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="78"
+   width="85"
    height="20"
    version="1.1"
    id="svg120"
@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -40,29 +40,31 @@
      inkscape:window-height="946"
      id="namedview122"
      showgrid="false"
-     inkscape:zoom="9.7363165"
-     inkscape:cx="48.124551"
-     inkscape:cy="8.6811024"
+     inkscape:zoom="6.8846154"
+     inkscape:cx="72.643823"
+     inkscape:cy="11.43091"
      inkscape:window-x="0"
      inkscape:window-y="35"
      inkscape:window-maximized="1"
      inkscape:current-layer="g112"
-     inkscape:document-rotation="0" />
+     inkscape:document-rotation="0"
+     showguides="true"
+     inkscape:guide-bbox="true" />
   <g
      shape-rendering="crispEdges"
      id="g112">
     <path
-       fill="#555"
-       d="M0 0h47v20H0z"
+       fill="#555555"
+       d="M 0,0 H 47 V 20 H 0 Z"
        id="path108" />
     <path
        fill="purple"
-       d="M47 0h31v20H47z"
+       d="M 47,0 H 85.004032 V 20 H 47 Z"
        id="path110"
-       style="fill:#b12d4f;fill-opacity:1" />
+       style="fill:#b12d4f;fill-opacity:1;stroke-width:1.10722" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';text-align:center;letter-spacing:0.8px;word-spacing:0px;text-anchor:middle;fill:#ffffff;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';text-align:center;letter-spacing:0.8px;word-spacing:0px;text-anchor:middle;fill:#ffffff"
        x="24.046015"
        y="14.064184"
        id="text854"><tspan
@@ -73,18 +75,18 @@
     <text
        xml:space="preserve"
        style="font-size:10.6667px;font-family:sans-serif;letter-spacing:-1px;word-spacing:0px;fill:#ffffff"
-       x="47.93446"
-       y="14.715396"
+       x="51.270721"
+       y="14.171208"
        id="text858"><tspan
          sodipodi:role="line"
          id="tspan856"
-         x="47.93446"
-         y="14.715396">GPLv3</tspan></text>
+         x="51.270721"
+         y="14.171208">GPLv3</tspan></text>
   </g>
   <g
-     fill="#fff"
+     fill="#ffffff"
      text-anchor="middle"
-     font-family="DejaVu Sans,Verdana,Geneva,sans-serif"
-     font-size="110"
+     font-family="'DejaVu Sans', Verdana, Geneva, sans-serif"
+     font-size="110px"
      id="g118" />
 </svg>
