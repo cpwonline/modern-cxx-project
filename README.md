@@ -1,7 +1,11 @@
+[![banner](docs/images/banner.png)]
 [![Actions Status](https://github.com/cpwonline/modern-cxx-project/workflows/Linux/badge.svg)](https://github.com/cpwonline/modern-cxx-project/actions)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/cpwonline/modern-cxx-project)](https://github.com/cpwonline/modern-cxx-project/releases)
+[![C++17](docs/images/badge-C++17.svg)][cpp_compilers]
+[![C++20](docs/images/badge-C++20.svg)][cpp_compilers]
+[![GPLv3 license](docs/images/badge-license-GPLv3.svg)](./LICENSE)
 
-[![banner](docs/images/banner.png)][homepage]
+===
 
 # Modern C++ Project
 
