@@ -6,6 +6,7 @@ option(${PROJECT_NAME}_DOXYGEN "Enable Doxygen documentation" OFF)
 option(${PROJECT_NAME}_CCACHE "Enable ccache to speed up the build time" OFF)
 option(${PROJECT_NAME}_CPPCHECK "Enable cppcheck to verify the sources syntax" OFF)
 option(${PROJECT_NAME}_VOID_PREFIX "Void prefix to install the project on CMake binary dir" OFF)
+option(${PROJECT_NAME}_APPIMAGE "Settings to create an AppImage" OFF)
 
 # Handling options
 
