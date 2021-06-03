@@ -1,7 +1,7 @@
 # .desktop file
 configure_file(
 	project.desktop.in 
-	${PROJECT_NAME}.desktop
+	${PROJECT_BINARY_DIR}/${PROJECT_NAME}.desktop
 )
 
 # .glade file
@@ -13,6 +13,6 @@ configure_file(
 # .pc file
 configure_file(
 	project.pc.in
-	${PROJECT_NAME}.pc 
+	${PROJECT_BINARY_DIR}/${PROJECT_NAME}.pc
 	@ONLY
 )
