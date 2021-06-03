@@ -1,4 +1,9 @@
-# PROJECT NAME
+[![Actions Status](https://github.com/cpwonline/modern-cxx-project/workflows/Linux/badge.svg)](https://github.com/cpwonline/modern-cxx-project/actions)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/cpwonline/modern-cxx-project)](https://github.com/cpwonline/modern-cxx-project/releases)
+
+[![banner](docs/images/Banner.svg)][homepage]
+
+# Modern C++ Project
 
 ## Introduction
 
