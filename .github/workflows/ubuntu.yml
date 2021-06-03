@@ -35,6 +35,10 @@ jobs:
         cmake -Bbuild -DCMAKE_INSTALL_PREFIX=$GITHUB_WORKSPACE/$INSTALL_LOCATION
         cmake --build build --config Release
         cmake --build build --target install --config Release
+
+    - name: Install Conan
+      run: pip install conan
+
     - name: Configure
       run: cmake -Bbuild -DCMAKE_INSTALL_PREFIX=$GITHUB_WORKSPACE/$INSTALL_LOCATION -Dproject-name_CONAN=1
 
