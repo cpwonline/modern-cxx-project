@@ -39,7 +39,7 @@ install(
 
 ## Share files
 install(
-	FILES ${PROJECT_BINARY_DIR}/share/${PROJECT_NAME}.desktop
+	FILES ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.desktop
 	DESTINATION ${CMAKE_INSTALL_DATADIR}/applications
 )
 install(
@@ -47,6 +47,10 @@ install(
 	DESTINATION ${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}
 )
 install(
-	FILES ${PROJECT_BINARY_DIR}/share/${PROJECT_NAME}.pc
+	FILES ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.pc
 	DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig
+)
+install(
+	FILES ${PROJECT_SOURCE_DIR}/share/icons/project-name.svg
+	DESTINATION ${CMAKE_INSTALL_DATADIR}/icons
 )
