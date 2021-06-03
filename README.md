@@ -5,7 +5,7 @@
 [![C++20](docs/images/badge-C++20.svg)][compilers_versions]
 [![GPLv3 license](docs/images/badge-license-GPLv3.svg)](./LICENSE)
 
-===
+====
 
 # Modern C++ Project
 
