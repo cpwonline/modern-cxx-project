@@ -1,46 +1,45 @@
 name: Ubuntu
 
 on:
-	push:
-		branches: [ master ]
-	pull_request:
-		branches: [ master ]
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 env:
-	BUILD_TYPE: Release
-	INSTALL_LOCATION: .local
+  BUILD_TYPE: Release
+  INSTALL_LOCATION: .local
 
 jobs:
-	build:
+  build:
 
-		runs-on: ubuntu-latest
-		if: "!contains(github.event.head_commit.message, '[skip ci]') && !contains(github.event.head_commit.message, '[ci skip]')"
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]') && !contains(github.event.head_commit.message, '[ci skip]')"
 
-		steps:
-		- uses: actions/checkout@v2
+    steps:
+    - uses: actions/checkout@v2
 
-		- name: cache dependencies
-			uses: actions/cache@v2
-			id: cache
-			with:
-				path: ${{ github.workspace }}/${{ env.INSTALL_LOCATION }}
-				key: ${{ runner.os }}-dependencies
+    - name: cache dependencies
+      uses: actions/cache@v2
+      id: cache
+      with:
+        path: ${{ github.workspace }}/${{ env.INSTALL_LOCATION }}
+        key: ${{ runner.os }}-dependencies
 
-		- name: Install GoogleTest
-			if: ${{ steps.cache.output.cache-hit != 'true' }}
-			run: |
-			apt-get install -y googletest
+    - name: Install GoogleTest
+      if: ${{ steps.cache.output.cache-hit != 'true' }}
+      run: apt-get install -y googletest
 
-		- name: Configure
-			run: cmake -Bbuild -DCMAKE_INSTALL_PREFIX=$GITHUB_WORKSPACE/$INSTALL_LOCATION -Dproject-name_CONAN=ON
+    - name: Configure
+      run: cmake -Bbuild -DCMAKE_INSTALL_PREFIX=$GITHUB_WORKSPACE/$INSTALL_LOCATION -Dproject-name_CONAN=1
 
-		- name: Build
-			run: cmake --build build --config $BUILD_TYPE -j4
+    - name: Build
+      run: cmake --build build --config $BUILD_TYPE -j4
 
-		- name: Run tests
-			run: |
-			cd build
-			ctest -C $BUILD_TYPE -VV
+    - name: Run tests
+      run: |
+        cd build
+        ctest -C $BUILD_TYPE -VV
 
-		- name: Install project
-			run: cmake --build build --target install --config Release
+    - name: Install project
+      run: cmake --build build --target install --config $BUILD_TYPE
