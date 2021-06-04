@@ -27,4 +27,10 @@ cmake ../../ \
 	-DCMAKE_INSTALL_PREFIX=AppDir/usr
 cmake --build . --target install
 
-linuxdeploy-x86_64.AppImage --appdir AppDir --output appimage && echo "Your AppImage is on ${PWD}"
+if [ -e linuxdeploy-x86_64.AppImage ]; then
+	linuxdeploy-x86_64.AppImage --appdir AppDir --output appimage && echo "Your AppImage is on ${PWD}"
+else
+	wget https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage
+	chmod 775 linuxdeploy-x86_64.AppImage
+	./linuxdeploy-x86_64.AppImage --appdir AppDir --output appimage && echo "Your AppImage is on ${PWD}"
+fi
