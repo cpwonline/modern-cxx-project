@@ -21,7 +21,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Set up prefix
 if(${PROJECT_NAME}_VOID_PREFIX)
-	set(CMAKE_INSTALL_PREFIX "/tmp/${PROJECT_NANE}" CACHE PATH "..." FORCE)
+	set(CMAKE_INSTALL_PREFIX "/tmp/${PROJECT_NAME}" CACHE PATH "..." FORCE)
 else()
 	if(NOT CMAKE_INSTALL_PREFIX)
 		set(CMAKE_INSTALL_PREFIX "/usr/local" CACHE PATH "..." FORCE)
@@ -30,9 +30,9 @@ endif()
 
 # Set up datadir
 if(${PROJECT_NAME}_APPIMAGE)
-	set(${PROJECT_NAME}_DATADIR /usr/share/${PROJECT_NAME})
+	set(${PROJECT_NAME}_DATADIR ././usr/share/${PROJECT_NAME}/)
 else()
-	set(${PROJECT_NAME}_DATADIR ../share/${PROJECT_NAME})
+	set(${PROJECT_NAME}_DATADIR ../share/${PROJECT_NAME}/)
 endif()
 
 # Set up installer

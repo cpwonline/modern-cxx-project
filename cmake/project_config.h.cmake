@@ -12,6 +12,6 @@
 #define PACKAGE_VERSION_COMPLETE "${PACKAGE_VERSION_COMPLETE}"
 
 /* Base data directory */
-#define DATADIR "${${PROJECT_NAME}_DATADIR}/"
+#define DATADIR "${${PROJECT_NAME}_DATADIR}"
 
 #endif /* CONFIG_H */ 
