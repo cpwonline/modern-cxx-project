@@ -50,12 +50,12 @@ int main(int argc, char* argv[])
 	}
 	else
 	{
-		std::cerr << "\nEnter the word to generate the HASH MD5." << '\n';
-		return 1;
+		std::cout << "\nEnter the word to generate the HASH MD5 ";
+		std::cin >> str;
 	}
 	ds << str;
 	ds.close();
 	std::cout << "\n" << Poco::DigestEngine::digestToHex(md5.digest()) << '\n';
-   
+
 	return 0;
 }
