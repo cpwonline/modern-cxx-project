@@ -1,5 +1,4 @@
 [![banner](docs/images/banner.svg)][homepage]
-[![Actions Status](https://github.com/cpwonline/modern-cxx-project/workflows/Ubuntu/badge.svg)](https://github.com/cpwonline/modern-cxx-project/actions)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/cpwonline/modern-cxx-project)](https://github.com/cpwonline/modern-cxx-project/releases)
 [![C++17](docs/images/badge-C++17.svg)][compilers_versions]
 [![C++20](docs/images/badge-C++20.svg)][compilers_versions]
