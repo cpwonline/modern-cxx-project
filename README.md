@@ -15,23 +15,67 @@ Hello! Thank you for using this software, developed with a lot of effort and aff
 
 ## About this software
 
+Modern C++ Project is a project template for modern C++ projects.
+
 ## Features
+
+Support for
+- CMake
+- C++17 C++11
+- Docker
+- Clang
+- CppCheck
+- Conan
+- GoogleTest
+- AppImage for Linux
+- Doxygen
+- ccache
 
 ## Requeriments
 
+- CMake
+- C++17 C++11
+- Conan
+- GoogleTest
+- Git
+
 ## Installation
+
+- Download the source code
+
+```shell
+git clone https://github.com/cpwonline/modern-cxx-project.git
+```
+
+- Build and install
+
+```shell
+cd modern-cxx-project
+mkdir build && cd build
+cmake .. -Dproject-name_CONAN=ON
+make
+sudo make install
+```
 
 ## How to use this software
 
+- Open the binary executable
+
+```shell
+./src/project-name
+```
+
 ## Documentation
+
+**Work in progress!**
 
 ## Donations
 
 If you want to help us financially we accept your donations using
 Paypal and performing the following steps:
 
-- 1. Access the following URL from your browser: [PayPal - CPW Online](https://paypal.me/cpwonline)
-- 2. Let yourself go ;)
+1. Access the following URL from your browser: [PayPal - CPW Online](https://paypal.me/cpwonline)
+2. Let yourself go ;)
 
 ## Contact
 
