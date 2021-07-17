@@ -5,9 +5,9 @@ pkg_search_module(DEPENDENCY1 REQUIRED gtkmm-3.0)
 pkg_search_module(DEPENDENCY2 REQUIRED libmariadb libmysqlclient)
 
 # Find packages
-find_package(Poco)
+find_package(Poco REQUIRED COMPONENTS Foundation)
 if(NOT Poco_FOUND)
-	message(FATAL_ERROR "POCO not found")
+	message(FATAL_ERROR "Poco not found")
 endif()
 
 # Targets
@@ -34,4 +34,4 @@ target_link_libraries(library2 ${DEPENDENCY2_LIBRARIES} objectlibrary)
 ## Main executable
 add_executable(${PROJECT_NAME} "main.cc")
 target_include_directories(${PROJECT_NAME} PUBLIC ${HEADER})
-target_link_libraries(${PROJECT_NAME} PUBLIC library1 library2 Poco::Poco)
+target_link_libraries(${PROJECT_NAME} PUBLIC library1 library2 Poco::Foundation)
